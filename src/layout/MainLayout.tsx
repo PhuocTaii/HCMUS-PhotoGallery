@@ -5,12 +5,12 @@ function MainLayout(){
     return (
         <>
             <Link to="/">
-                <div className='p-5'>
+                <div className='px-5 pt-5 sticky top-0 z-50 bg-white'>
                     <img src={home} alt="home" style={{width: 24, height: 24}} />
                     <a>Home</a>
                 </div>
-                <Outlet />
             </Link>
+            <Outlet />
         </>
     )
 }
